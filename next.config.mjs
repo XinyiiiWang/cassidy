@@ -4,7 +4,7 @@ const nextConfig = {
     images: {
         unoptimized: true, // Disable image optimization for GitHub Pages
     },
-    basePath: '/cassidy',
+    // basePath: '/cassidy',
 };
 
 export default nextConfig;
