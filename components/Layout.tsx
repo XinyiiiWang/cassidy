@@ -21,9 +21,7 @@ export default function RootLayout({
               priority
             />
           </div>
-          <div className="ml-4 md:ml-8 lg:ml-16">
-            <Sidebar />
-          </div>
+          <Sidebar />
           <div className="relative z-10 flex h-screen items-center justify-center">
             {children}
           </div>
