@@ -7,26 +7,32 @@ import exhibitionImg from '@/assets/img/exhibition.png';
 import publicationImg from '@/assets/img/publication.png';
 import illustrationImg from '@/assets/img/illustration.png';
 import otherImg from '@/assets/img/other.png';
+import Link from 'next/link';
+
 
 export default function Sidebar(){
     return (
         <div className="fixed top-0 left-4 md:left-8 lg:left-20 h-screen w-64 text-black p-6 flex flex-col justify-between">
             <div>
                 <div className="mb-10">
+                <Link href="/">
                 <Image
                   src={logoImg}
                   alt="Logo"
                   width={150}
                   height={50}
-                />
+                  />
+                </Link>
                 </div>
                 <div className="mb-6">
-                <Image
-                  src={aboutImg}
-                  alt="about"
-                  width={75}
-                  height={25}
-                />
+                <Link href="/about">
+                  <Image
+                    src={aboutImg}
+                    alt="about"
+                    width={75}
+                    height={25}
+                  />
+                </Link>
                 </div>
             </div>
             <div>
