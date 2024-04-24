@@ -1,4 +1,6 @@
 import Image from "next/image";
+import React from "react";
+import CircularImageGalleryStyle from './CircularImageGallery.module.css';
 
 type ProjectPictureProps = {
   imageName: string;
@@ -6,14 +8,14 @@ type ProjectPictureProps = {
 };
 
 export default function ProjectPicture({ imageName, alt }: ProjectPictureProps) {
-  const imagePath: string = `@/assets/project/${imageName}`;
-
   return (
-    <Image
-      src={imagePath}
-      alt={alt}
-      width={150}
-      height={90}
-    />
+    <div className={CircularImageGalleryStyle.imageContainer}>
+      <Image
+        src={`/project/${imageName}`}
+        alt={alt}
+        width={150}
+        height={90}
+      />
+    </div>
   );
 }

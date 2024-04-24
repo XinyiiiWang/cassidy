@@ -1,0 +1,28 @@
+.circle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 600px; /* Adjust size as needed */
+    height: 600px; /* Adjust size as needed */
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .imageContainer {
+    position: absolute;
+    width: 100px; /* Adjust size as needed */
+    height: 60px; /* Adjust size as needed */
+    transform-origin: 50% 150px; /* Adjust origin based on your layout */
+  }
+  
+  /* Example for 8 images, adjust as necessary */
+  .imageContainer:nth-child(1) { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+  .imageContainer:nth-child(2) { transform: rotate(45deg) translateX(150px) rotate(-45deg); }
+  .imageContainer:nth-child(3) { transform: rotate(90deg) translateX(150px) rotate(-90deg); }
+  .imageContainer:nth-child(4) { transform: rotate(135deg) translateX(150px) rotate(-135deg); }
+  .imageContainer:nth-child(5) { transform: rotate(180deg) translateX(150px) rotate(-180deg); }
+  .imageContainer:nth-child(6) { transform: rotate(225deg) translateX(150px) rotate(-225deg); }
+  .imageContainer:nth-child(7) { transform: rotate(270deg) translateX(150px) rotate(-270deg); }
+  .imageContainer:nth-child(8) { transform: rotate(315deg) translateX(150px) rotate(-315deg); }

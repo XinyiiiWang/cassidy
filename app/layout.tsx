@@ -3,7 +3,7 @@ import Image from 'next/image';
 import "./globals.css";
 import Sidebar from "@/app/_components/Sidebar";
 import backgroundImg from "@/public/background.png";
-import ProjectPicture from '@/app/_components/ProjectPicture';
+import { CircularImageGallery } from "./_components/CircularImageGallery";
 
 
 export const metadata: Metadata = {
@@ -26,14 +26,7 @@ export default function RootLayout({
           <Sidebar />
         </div>
         <div className="absolute top-0 left-1/4 z-20 flex h-screen items-center justify-center w-3/4">
-          {imageNames.map((imageName, index) => (
-            <ProjectPicture
-              key={index}
-              imageName={imageName}
-              alt={`Image ${index + 1}`}
-            />
-          ))}
-          {children}
+          <CircularImageGallery images={imageNames.map((name, index) => ({ name, alt: `Image ${index + 1}` }))} />
         </div>
         <div className="absolute top-0 left-0 z-[-1] h-full w-full">
           <Image

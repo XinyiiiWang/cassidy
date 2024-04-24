@@ -11,6 +11,7 @@ import Link from 'next/link';
 
 
 export default function Sidebar(){
+  console.log("logoImg",logoImg);
     return (
         <div className="fixed top-0 left-4 md:left-8 lg:left-20 h-screen w-64 text-black p-6 flex flex-col justify-between">
             <div>
