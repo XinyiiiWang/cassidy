@@ -27,6 +27,7 @@ export default function RootLayout({
         </div>
         <div className="absolute top-0 left-1/4 z-20 flex h-screen items-center justify-center w-3/4">
           <CircularImageGallery images={imageNames.map((name, index) => ({ name, alt: `Image ${index + 1}` }))} />
+          {children}
         </div>
         <div className="absolute top-0 left-0 z-[-1] h-full w-full">
           <Image
