@@ -5,7 +5,7 @@ import CircularImageGalleryStyle from './CircularImageGallery.module.css';
 type CircularImageGalleryProps = {
     images: { name: string; alt: string }[];
   };
-  
+
 export function CircularImageGallery({ images }: CircularImageGalleryProps) {
     return (
       <div className={CircularImageGalleryStyle.circle}>

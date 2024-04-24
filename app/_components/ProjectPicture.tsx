@@ -11,7 +11,7 @@ export default function ProjectPicture({ imageName, alt }: ProjectPictureProps) 
   return (
     <div className={CircularImageGalleryStyle.imageContainer}>
       <Image
-        src={`/project/${imageName}`}
+        src={`cassidyportfolio/project/${imageName}`}
         alt={alt}
         width={150}
         height={90}
