@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 
 type ProjectPictureProps = {
   imageName: string;
@@ -6,7 +6,7 @@ type ProjectPictureProps = {
 };
 
 export default function ProjectPicture({ imageName, alt }: ProjectPictureProps) {
-  const imagePath: string = `../assets/project/${imageName}`;
+  const imagePath: string = `@/assets/project/${imageName}`;
 
   return (
     <Image
